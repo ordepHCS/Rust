@@ -89,14 +89,22 @@ Declare variáveis para um nome, idade e salário.
 Use println! para imprimir uma frase formatada, como:
 "O funcionário João tem 30 anos e recebe um salário de 2500.50 reais por mês."*/
 
-fn main() {
+/*fn main() {
     let name = "Pedro";
     let age = 20;
     let wage = 655;
     println!("O funcionário {} tem {} anos e recebe um salário de {} reais por mês", name, age, wage);
-}
+}*/
 
 /*8. Praticando Mutabilidade
 Crie uma variável contador inicializada com 0 e marque-a como mutável.
 Use um loop para incrementar o valor de contador até 5.
 Imprima o valor de contador a cada iteração.*/
+
+fn main() {
+    let mut count = 0;
+    for _ in 0..=5 {
+        println!("{}", count);
+        count += 1;
+    }
+}
