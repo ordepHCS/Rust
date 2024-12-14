@@ -3,7 +3,7 @@ Declare duas variáveis, a e b, sendo a mutável e b imutável.
 Atribua valores iniciais a a e b e, em seguida, tente modificar ambos os valores.
 Observe o que acontece ao tentar alterar a variável imutável.*/
 
-fn main() {
+/*fn main() {
     let a_imutavel = 10;
     let mut b_mutavel = 10;
     a_imutavel = 15;
@@ -11,14 +11,21 @@ fn main() {
 
     println!("{}", a_imutavel);
     println!("{}", b_mutavel);
-}
+}*/
 
 /*2. Variable Shadowing
 Declare uma variável x e atribua o valor 10.
 Redefina x como uma string com o valor "dez".
-Imprima o valor de x após cada redefinição para entender como o shadowing funciona.
+Imprima o valor de x após cada redefinição para entender como o shadowing funciona.*/
 
-3. Escopos e Lifetime
+fn main() {
+    let x = 10;
+    println!("{}", x);
+    let x = "dez";
+    println!("{}", x);
+}
+
+/*3. Escopos e Lifetime
 Declare uma variável y no escopo principal.
 Dentro de um escopo interno (usando {}), redefina y adicionando um valor a ele.
 Imprima o valor de y dentro e fora do escopo interno para observar a diferença.
