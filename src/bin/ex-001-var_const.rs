@@ -30,20 +30,27 @@ Declare uma variável y no escopo principal.
 Dentro de um escopo interno (usando {}), redefina y adicionando um valor a ele.
 Imprima o valor de y dentro e fora do escopo interno para observar a diferença.*/
 
-fn main() {
+/*fn main() {
     let y = 10; {
         let y = 15;
         println!("inside: {}", y);
     }
     println!("out: {}", y);
-}
+}*/
 
 /*4. Usando Constantes
 Crie uma constante chamada DAYS_IN_WEEK com o valor 7.
 Declare uma variável que armazene a quantidade de horas em uma semana usando a constante e o valor de 24 para horas em um dia.
-Imprima o resultado.
+Imprima o resultado.*/
 
-5. Calculadora Simples
+fn main() {
+    const DAYS_IN_WEEK: u32 = 7;
+    let var_hours = 24;
+    let var_hours_in_week = DAYS_IN_WEEK * var_hours;
+    println!("the week has {} days and one day has {} hours and one week has {} hours", DAYS_IN_WEEK, var_hours, var_hours_in_week);
+}
+
+/*5. Calculadora Simples
 Crie uma função chamada calculate_total_seconds que receba um número de minutos como entrada e retorne o total em segundos usando a constante SECONDS_IN_MINUTE.
 Chame a função no main, passando diferentes valores e imprimindo os resultados.
 
