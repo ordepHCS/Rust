@@ -43,23 +43,40 @@ Crie uma constante chamada DAYS_IN_WEEK com o valor 7.
 Declare uma variável que armazene a quantidade de horas em uma semana usando a constante e o valor de 24 para horas em um dia.
 Imprima o resultado.*/
 
-fn main() {
+/*fn main() {
     const DAYS_IN_WEEK: u32 = 7;
     let var_hours = 24;
     let var_hours_in_week = DAYS_IN_WEEK * var_hours;
     println!("the week has {} days and one day has {} hours and one week has {} hours", DAYS_IN_WEEK, var_hours, var_hours_in_week);
-}
+}*/
 
 /*5. Calculadora Simples
 Crie uma função chamada calculate_total_seconds que receba um número de minutos como entrada e retorne o total em segundos usando a constante SECONDS_IN_MINUTE.
-Chame a função no main, passando diferentes valores e imprimindo os resultados.
+Chame a função no main, passando diferentes valores e imprimindo os resultados.*/
 
-6. Praticando Drop
+const SECONDS_IN_MINUTE: i32 = 60;
+fn calculate_total_seconds(minutes: i32) -> i32 {
+    minutes * SECONDS_IN_MINUTE
+}
+fn main() {
+    let minute1 = 5;
+    let minute2 = 10;
+    let minute3 = 15;
+
+    let total_seconds1 = calculate_total_seconds(minute1);
+    let total_seconds2 = calculate_total_seconds(minute2);
+    let total_seconds3 = calculate_total_seconds(minute3);
+
+    println!("{} minutes are {} seconds", minute1, total_seconds1);
+    println!("{} minutes are {} seconds", minute2, total_seconds2);
+    println!("{} minutes are {} seconds", minute3, total_seconds3);
+}
+/*6. Praticando Drop
 Crie uma variável que armazene uma String.
 Dentro de um escopo interno, defina outra String que é uma concatenação da primeira com mais texto.
-Imprima a segunda string dentro do escopo e tente acessá-la fora do escopo. Observe o que acontece.
+Imprima a segunda string dentro do escopo e tente acessá-la fora do escopo. Observe o que acontece.*/
 
-7. Criando Placeholders
+/*7. Criando Placeholders
 Declare variáveis para um nome, idade e salário.
 Use println! para imprimir uma frase formatada, como:
 "O funcionário João tem 30 anos e recebe um salário de 2500.50 reais por mês."
