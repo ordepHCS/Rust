@@ -54,7 +54,7 @@ Imprima o resultado.*/
 Crie uma função chamada calculate_total_seconds que receba um número de minutos como entrada e retorne o total em segundos usando a constante SECONDS_IN_MINUTE.
 Chame a função no main, passando diferentes valores e imprimindo os resultados.*/
 
-const SECONDS_IN_MINUTE: i32 = 60;
+/*const SECONDS_IN_MINUTE: i32 = 60;
 fn calculate_total_seconds(minutes: i32) -> i32 {
     minutes * SECONDS_IN_MINUTE
 }
@@ -70,12 +70,19 @@ fn main() {
     println!("{} minutes are {} seconds", minute1, total_seconds1);
     println!("{} minutes are {} seconds", minute2, total_seconds2);
     println!("{} minutes are {} seconds", minute3, total_seconds3);
-}
+}*/
+
 /*6. Praticando Drop
 Crie uma variável que armazene uma String.
 Dentro de um escopo interno, defina outra String que é uma concatenação da primeira com mais texto.
 Imprima a segunda string dentro do escopo e tente acessá-la fora do escopo. Observe o que acontece.*/
 
+fn main() {
+    let string1 = "lemonade"; {
+        let string2 = "lemonade is nice";
+        println!("{}", string1);
+    }
+}
 /*7. Criando Placeholders
 Declare variáveis para um nome, idade e salário.
 Use println! para imprimir uma frase formatada, como:
