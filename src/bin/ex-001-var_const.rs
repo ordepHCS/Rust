@@ -18,19 +18,27 @@ Declare uma variável x e atribua o valor 10.
 Redefina x como uma string com o valor "dez".
 Imprima o valor de x após cada redefinição para entender como o shadowing funciona.*/
 
-fn main() {
+/*fn main() {
     let x = 10;
     println!("{}", x);
     let x = "dez";
     println!("{}", x);
-}
+}*/
 
 /*3. Escopos e Lifetime
 Declare uma variável y no escopo principal.
 Dentro de um escopo interno (usando {}), redefina y adicionando um valor a ele.
-Imprima o valor de y dentro e fora do escopo interno para observar a diferença.
+Imprima o valor de y dentro e fora do escopo interno para observar a diferença.*/
 
-4. Usando Constantes
+fn main() {
+    let y = 10; {
+        let y = 15;
+        println!("inside: {}", y);
+    }
+    println!("out: {}", y);
+}
+
+/*4. Usando Constantes
 Crie uma constante chamada DAYS_IN_WEEK com o valor 7.
 Declare uma variável que armazene a quantidade de horas em uma semana usando a constante e o valor de 24 para horas em um dia.
 Imprima o resultado.
