@@ -27,8 +27,8 @@ Drop: quando um objeto sai do escopo a funcao Drop e chamada automaticamente
 liberando qualquer recurso associado a ele ex: memoria, arquivos abertos, etc..*/
 
 // constantes em Rust
-// constantes em rusts podem ser definidas dentro ou fora de uma funcao ou dentro de um contexto do interior de uma função
-const SECONDS_IN_MINUTE: u32 = 60; // constantes em Rust sao imutaveis
+// constantes em rust podem ser definidas dentro ou fora de uma funcao ou dentro de um contexto do interior de uma função
+/*const SECONDS_IN_MINUTE: u32 = 60; // constantes em Rust sao imutaveis
 fn main() {
     // constantes declaradas dentro do escopo 
     const _MINUTES_IN_HOUR: u32 = 60;
@@ -38,4 +38,4 @@ fn main() {
     let total_in_seconds = total * SECONDS_IN_HOUR;
     println!("{}", total);
     println!("{}",total_in_seconds);
-}
+}*/

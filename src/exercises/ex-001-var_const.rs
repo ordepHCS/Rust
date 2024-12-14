@@ -101,10 +101,10 @@ Crie uma variável contador inicializada com 0 e marque-a como mutável.
 Use um loop para incrementar o valor de contador até 5.
 Imprima o valor de contador a cada iteração.*/
 
-fn main() {
+/*fn main() {
     let mut count = 0;
     for _ in 0..=5 {
         println!("{}", count);
         count += 1;
     }
-}
+}*/
