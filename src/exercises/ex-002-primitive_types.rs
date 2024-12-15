@@ -1,13 +1,13 @@
-/* Conversão e literais:
-
-Declare uma variável peso no formato hexadecimal representando o número decimal 70 (0x46) e converta-o para decimal.
-Declare uma variável populacao no formato binário representando o número 8 e converta para decimal.
-Imprima os valores convertidos. */
+/* Declare uma tupla dados_pessoais contendo os valores (idade, altura, maior_de_idade).
+Extraia os valores da tupla para variáveis separadas usando pattern matching.
+Imprima cada valor.
+Arrays: */
 
 fn main() {
-    let hexa_decimal = 0x46;
-    let populacao_binary = 0b1000;
-    
-    println!("{:?}",hexa_decimal);
-    println!("{:?}",populacao_binary);
+    let dados_pessoais: (i32, f64, i32) = (20, 1.75, 18);
+    let (idade, altura, maior_de_idade) = dados_pessoais;
+
+    println!("idade: {:?}", idade);
+    println!("altura: {:?}", altura);
+    println!("maior_de_idade: {:?}", maior_de_idade);
 }
