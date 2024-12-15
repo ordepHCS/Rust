@@ -1,13 +1,10 @@
-/* Declare uma tupla dados_pessoais contendo os valores (idade, altura, maior_de_idade).
-Extraia os valores da tupla para variáveis separadas usando pattern matching.
-Imprima cada valor.
-Arrays: */
+/* Crie um array notas do tipo f32 com os valores [7.5, 8.0, 9.5].
+Substitua o segundo elemento do array por 10.0.
+Imprima o array modificado e a fatia contendo os dois primeiros elementos. */
 
 fn main() {
-    let dados_pessoais: (i32, f64, i32) = (20, 1.75, 18);
-    let (idade, altura, maior_de_idade) = dados_pessoais;
+    let mut notas: [f32;3] = [7.5, 8.0, 9.5];
+    notas[1] = 10.0;
 
-    println!("idade: {:?}", idade);
-    println!("altura: {:?}", altura);
-    println!("maior_de_idade: {:?}", maior_de_idade);
+    println!("notas: {:?}", &notas[..2]);
 }
