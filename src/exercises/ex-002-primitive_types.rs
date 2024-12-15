@@ -1,27 +1,13 @@
-/* Exercício: Trabalhando com Tipos de Dados em Rust
-Objetivo:
-Criar um programa que:
+/* Conversão e literais:
 
-Utilize diferentes tipos escalares e compostos.
-Realize operações e manipulações nos tipos.
-Imprima os resultados no console.
-Enunciado:
-Crie um programa em Rust que execute as seguintes etapas: */
-
-/* Tipos escalares:
-
-Declare e inicialize uma variável idade do tipo inteiro u8 com o valor 25.
-Declare e inicialize uma variável altura do tipo flutuante f32 com o valor 1.75.
-Declare uma variável booleana maior_de_idade que será true se a idade for maior ou igual a 18.
-Imprima os valores dessas variáveis. */
+Declare uma variável peso no formato hexadecimal representando o número decimal 70 (0x46) e converta-o para decimal.
+Declare uma variável populacao no formato binário representando o número 8 e converta para decimal.
+Imprima os valores convertidos. */
 
 fn main() {
-    let idade: u8 = 25;
-    let altura: f32 = 1.75;
-    let mut maior_idade: bool = false;
-
-    if idade >= 18 {
-        maior_idade = true;
-    }
-    println!("idade: {:?} altura: {:?} maior_idade: {:?}", idade, altura, maior_idade);
-}   
+    let hexa_decimal = 0x46;
+    let populacao_binary = 0b1000;
+    
+    println!("{:?}",hexa_decimal);
+    println!("{:?}",populacao_binary);
+}
